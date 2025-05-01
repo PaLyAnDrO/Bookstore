@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <div>
+        <div class="bookstore-header">
+            <div class="bookstore-header-left-section">
+                <a href="index.ejs" class="header-link">
+                    <img class="bookstore-logo"
+                         src="images/amazon-logo-white.png">
+                </a>
+            </div>
+
+            <div class="bookstore-header-middle-section">
+                <img class="search-icon" src="" alt="">
+                <input class="search-bar" type="text" placeholder="Find a book">
+                <button class="search-button">
+                    Пошук
+                </button>
+            </div>
+
+            <div class="bookstore-header-right-section">
+                <a class="cart-link header-link" href="orders.html">
+                    <img src="" alt="">
+                    <div class="cart-quantity js-cart-quantity"></div>
+                    <span class="cart-text">Кошик</span>
+                </a>
+                <a class="login-link header-link" href="checkout.html">
+                    <img class="login-icon" src="images/icons/cart-icon.png">
+                    <span class="cart-text">Увійти</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
