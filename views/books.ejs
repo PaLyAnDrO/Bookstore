@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='/stylesheets/general.css' />
+    <link rel='stylesheet' href='/stylesheets/header.css' />
+    <link rel='stylesheet' href='/stylesheets/sidebar.css' />
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+
+    <title>Книги</title>
+</head>
+<body>
+<div class="bookstore-header">
+    <div class="bookstore-header-left-section">
+        <a href="header.html" class="header-link">
+            <img class="bookstore-logo" src="/images/logo.png">
+        </a>
+    </div>
+
+    <div class="bookstore-header-middle-section">
+        <input class="search-bar" type="text" placeholder="Find a book">
+        <button class="search-button">
+            <img class="search-icon" src="/images/icons/search.svg" alt="">
+        </button>
+    </div>
+
+    <div class="bookstore-header-right-section">
+        <a class="cart-link header-link" href="orders.html">
+            <img class="cart-icon" src="/images/icons/cart.svg" alt="">
+            <div class="cart-quantity js-cart-quantity"></div>
+            <span class="cart-text">Cart</span>
+        </a>
+        <a class="login-link header-link" href="checkout.html">
+            <img class="login-icon" src="/images/icons/person.svg">
+            <span class="login-text">Log in</span>
+        </a>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="sidebar-link">
+        <a href="" class="genre-link">
+            <span class="genre-text">Home</span>
+        </a>
+    </div>
+    <div class="sidebar-link">
+        <a href="" class="genre-link">
+            <span class="genre-text">Home</span>
+        </a>
+    </div>
+    <div class="sidebar-link">
+        <a href="" class="genre-link">
+            <span class="genre-text">Home</span>
+        </a>
+    </div>
+    <div class="sidebar-link">
+        <a href="" class="genre-link">
+            <span class="genre-text">Home</span>
+        </a>
+    </div>
+    <div class="sidebar-link">
+        <a href="" class="genre-link">
+            <span class="genre-text">Home</span>
+        </a>
+    </div>
+    <div class="sidebar-link">
+        <a href="" class="genre-link">
+            <span class="genre-text">Home</span>
+        </a>
+    </div>
+</div>
+
+<div class="main">
+    <div class="sorting-container">
+        <div class="amount-of-books">45646 Items</div>
+
+        <div class="sorting-menu">
+            <select class="js-quantity-selector-${product.id}">
+                <option selected value="1">Popular</option>
+                <option value="2">New products</option>
+                <option value="3">From expensive to cheap</option>
+                <option value="4">From cheap to expensive</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="products-grid js-products-grid">
+        <%- booksHTML %>
+    </div>
+</div>
+</body>
+
+</html>

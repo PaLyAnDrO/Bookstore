@@ -4,6 +4,11 @@ body {
     /* The <body> element has a default margin of 8px
        on all sides. This removes the default margins. */
     margin: 0;
+    background-color: #FFF1D5;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* <p> elements have a default margin on the top
@@ -24,24 +29,33 @@ input, select, button {
     font-family: Roboto, Arial;
 }
 
+.buy-icon {
+    height: 30px;
+}
+
 .button-primary {
-    color: rgb(33, 33, 33);
-    background-color: rgb(255, 216, 20);
-    border: 1px solid rgb(252, 210, 0);
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #BDDDE4;
+    color: black;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 
 .button-primary:hover {
-    background-color: rgb(247, 202, 0);
-    border: 1px solid rgb(242, 194, 0);
+    background-color: #c4d9e1;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
 }
 
 .button-primary:active {
-    background: rgb(255, 216, 20);
-    border-color: rgb(252, 210, 0);
+    background-color: #98d7dd;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
     box-shadow: none;
+    transform: scale(0.98);
 }
 
 .button-secondary {
