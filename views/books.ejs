@@ -35,7 +35,7 @@
             <div class="cart-quantity js-cart-quantity"></div>
             <span class="cart-text">Cart</span>
         </a>
-        <a class="login-link header-link" href="checkout.html">
+        <a class="login-link header-link" href="registration">
             <img class="login-icon" src="/images/icons/person.svg">
             <span class="login-text">Log in</span>
         </a>
@@ -43,44 +43,15 @@
 </div>
 
 <div class="sidebar">
-    <div class="sidebar-link">
-        <a href="" class="genre-link">
-            <span class="genre-text">Home</span>
-        </a>
-    </div>
-    <div class="sidebar-link">
-        <a href="" class="genre-link">
-            <span class="genre-text">Home</span>
-        </a>
-    </div>
-    <div class="sidebar-link">
-        <a href="" class="genre-link">
-            <span class="genre-text">Home</span>
-        </a>
-    </div>
-    <div class="sidebar-link">
-        <a href="" class="genre-link">
-            <span class="genre-text">Home</span>
-        </a>
-    </div>
-    <div class="sidebar-link">
-        <a href="" class="genre-link">
-            <span class="genre-text">Home</span>
-        </a>
-    </div>
-    <div class="sidebar-link">
-        <a href="" class="genre-link">
-            <span class="genre-text">Home</span>
-        </a>
-    </div>
+    <%- genresHTML %>
 </div>
 
 <div class="main">
     <div class="sorting-container">
-        <div class="amount-of-books">45646 Items</div>
+        <div class="amount-of-books">100 Items</div>
 
         <div class="sorting-menu">
-            <select class="js-quantity-selector-${product.id}">
+            <select class="js-quantity-selector-${product.id}" id="sort-select">
                 <option selected value="1">Popular</option>
                 <option value="2">New products</option>
                 <option value="3">From expensive to cheap</option>

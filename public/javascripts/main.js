@@ -45,3 +45,18 @@ export function renderProductsGrid(books) {
     });
     return productsHTML;
 }
+
+export function renderGenres (genres) {
+    let genresHTML = ``;
+
+    genres.forEach((genre) => {
+        genresHTML += `
+        <div class="sidebar-link">
+            <a href="" class="genre-link">
+                <span class="genre-text">${genre.name}</span>
+            </a>
+        </div>
+        `;
+    });
+    return genresHTML;
+}

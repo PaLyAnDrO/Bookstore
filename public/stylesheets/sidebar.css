@@ -1,13 +1,18 @@
 .sidebar {
     position: fixed;
+    top: 60px;
     left: 0;
     bottom: 0;
-    top: 60px;
     background: white;
     width: 200px;
     z-index: 200;
     padding-top: 10px;
     box-shadow: 2px 2px 2px #9EC6F3;
+    overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar-link {

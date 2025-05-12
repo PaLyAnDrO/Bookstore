@@ -14,5 +14,11 @@ export async function getBooks () {
     const [rows] = await pool.query("SELECT * FROM books ORDER BY rating DESC");
     return rows;
 }
-export const books = await getBooks();
+
+export async function getGenres () {
+    const [rows] = await pool.query("SELECT * FROM genres");
+    return rows;
+}
+
+
 
